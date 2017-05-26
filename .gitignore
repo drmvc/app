@@ -1,0 +1,8 @@
+/.idea/
+/logs/
+/cache/
+/composer.lock
+/vendor/
+/public/vendor/
+/app/Configs/config.php
+/app/Configs/routes.php
