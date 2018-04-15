@@ -1,8 +1,7 @@
+/.env
 /.idea/
-/logs/
-/cache/
-/composer.lock
 /vendor/
-/public/vendor/
-/app/Configs/config.php
-/app/Configs/routes.php
+/node_modules/
+/public/resources/
+/composer.lock
+/package-lock.json

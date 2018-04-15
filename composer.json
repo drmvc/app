@@ -6,11 +6,13 @@
   "license": "MIT",
   "keywords": [
     "drmvc",
+    "example",
+    "demo",
     "twig"
   ],
   "autoload": {
     "psr-4": {
-      "DrMVC\\App\\": "app/"
+      "MyApp\\": "./app/"
     }
   },
   "authors": [
@@ -22,12 +24,25 @@
     }
   ],
   "require": {
-    "php": "^5.5 || ^7.0",
-    "drmvc/framework": "^2.0",
-    "drmvc/database": "^0.1",
-    "drmvc/config": "^1.0",
-    "drmvc/helpers": "^1.0",
-    "twig/twig": "~1"
+    "php": "^7.0",
+    "drmvc/framework": "dev-master",
+    "twig/twig": "^2.4"
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "dev",
+  "scripts": {
+    "npm": [
+      "npm install"
+    ],
+    "gulp": [
+      "gulp"
+    ],
+    "dotenv": [
+      "cp .env.example .env"
+    ],
+    "post-install-cmd": [
+      "@dotenv",
+      "@npm",
+      "@gulp"
+    ]
+  }
 }
