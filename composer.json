@@ -1,14 +1,16 @@
 {
   "name": "drmvc/app",
   "type": "project",
-  "description": "Small demo site based on DrMVC Framework",
+  "description": "Skeleton of application based on DrMVC Framework",
   "homepage": "https://drmvc.com/",
   "license": "MIT",
   "keywords": [
     "drmvc",
     "example",
-    "demo",
-    "twig"
+    "application",
+    "dotenv",
+    "twig",
+    "gulp"
   ],
   "autoload": {
     "psr-4": {
@@ -25,24 +27,17 @@
   ],
   "require": {
     "php": "^7.0",
-    "drmvc/framework": "dev-master",
+    "drmvc/framework": "^3.0.0@RC",
+    "vlucas/phpdotenv": "^2.4.0",
     "twig/twig": "^2.4"
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "rc",
   "scripts": {
-    "npm": [
-      "npm install"
-    ],
-    "gulp": [
-      "gulp"
-    ],
     "dotenv": [
       "cp .env.example .env"
     ],
     "post-install-cmd": [
-      "@dotenv",
-      "@npm",
-      "@gulp"
+      "@dotenv"
     ]
   }
 }

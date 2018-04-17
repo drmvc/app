@@ -1,17 +1,28 @@
-# DrMVC Demo
+# DrMVC Application
 
-Small demo site based on DrMVC Framework
+Skeleton of application based on DrMVC Framework.
+
+## What inside
+
+* Support for environment variables is implemented through `Dotenv\Dotenv` class
+* Few dummy classes inside `app/Controllers` folder
+* Ready for usage TWIG template engine, templates in `app/Views`
+* Several popular modules added to `packages.json`
+* `gulpfile.js` configured to simplify the assembly of static files
 
 ## How to install
 
 For first we need clone the demo project
 
-    git clone https://github.com/drmvc/demo.git my_project
-    cd my_projects
+    composer create-project drmvc/app application
+    cd application
 
-Now we need to install dependent files and build static files
+For enabling support of `gulpfile.js` need to install `gulp` tool
 
-    composer update
+    npm install -g gulp
+
+Now need to install dependencies and build static files
+
     npm install
     gulp
 
@@ -22,7 +33,7 @@ Let's run the php localhost server
 
 Now you can open your web-browser and go to http://localhost:8000
 
-# Links
+## Links
 
 * [DrMVC project website](https://drmvc.com/)
 * [DrMVC Starter-kit](https://github.com/drmvc/app)
