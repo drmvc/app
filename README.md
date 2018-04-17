@@ -12,7 +12,7 @@ Skeleton of application based on DrMVC Framework.
 
 ## How to install
 
-For first we need clone the demo project
+For first need to create new project from the skeleton:
 
     composer create-project drmvc/app application
     cd application
@@ -35,6 +35,5 @@ Now you can open your web-browser and go to http://localhost:8000
 
 ## Links
 
-* [DrMVC project website](https://drmvc.com/)
-* [DrMVC Starter-kit](https://github.com/drmvc/app)
+* [DrMVC Project](https://drmvc.com/)
 * [DrMVC Demo](https://github.com/drmvc/demo)
