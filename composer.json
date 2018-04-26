@@ -27,17 +27,17 @@
   ],
   "require": {
     "php": "^7.0",
-    "drmvc/framework": "^3.0.0@RC",
+    "drmvc/framework": "^3.0.0",
     "vlucas/phpdotenv": "^2.4.0",
     "twig/twig": "^2.4"
   },
-  "minimum-stability": "rc",
+  "minimum-stability": "stable",
   "scripts": {
-    "dotenv": [
-      "cp .env.example .env"
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ],
-    "post-install-cmd": [
-      "@dotenv"
+    "post-create-project-cmd": [
+      "@composer dump-autoload -o"
     ]
   }
 }
